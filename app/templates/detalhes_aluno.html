@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Detalhes do Aluno{% endblock %}
+
+{% block content %}
+    <h1 class="my-4 text-center">{{ aluno.nome }}</h1>
+    <div class="card mb-4">
+        <img class="card-img-top" src="{{ aluno.foto }}" alt="Foto de {{ aluno.nome }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ aluno.nome }}</h5>
+            <p class="card-text">Idade: {{ aluno.idade }}</p>
+            <p class="card-text">Mini bio: {{ aluno.mini_bio }}</p>
+            <a href="{{ aluno.github }}" class="btn btn-primary">GitHub</a>
+            <a href="{{ aluno.linkedin }}" class="btn btn-secondary">LinkedIn</a>
+        </div>
+    </div>
+{% endblock %}
