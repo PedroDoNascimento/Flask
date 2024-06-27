@@ -29,7 +29,7 @@ alunos = [
     Aluno("Maria Thereza Adamatti Rizzotto", 21, "https://github.com/mariarizzotto", "https://linkedin.com/in/mariarizzotto", "Estudante de Engenharia.", "path/to/photo.jpg"),
     Aluno("Otávio Griebeler Turra", 22, "https://github.com/otavioturra", "https://linkedin.com/in/otavioturra", "Estudante de Engenharia.", "path/to/photo.jpg"),
     Aluno("Pedro David Brum", 23, "https://github.com/pedrobrum", "https://linkedin.com/in/pedrobrum", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Pedro do Nascimento", 20, "https://github.com/pedronascimento", "https://linkedin.com/in/pedronascimento", "Estudante de Engenharia.", "https://campsbc.org.br/wp-content/uploads/2021/03/gato-no-pc.gif"),
+    Aluno("Pedro do Nascimento", 20, "https://github.com/PedroDoNascimento", "https://linkedin.com/in/pedronascimento", "Estudante de Engenharia da computação", "https://campsbc.org.br/wp-content/uploads/2021/03/gato-no-pc.gif"),
     Aluno("Pedro Henrique Gasparin Machado", 21, "https://github.com/pedrogasparin", "https://linkedin.com/in/pedrogasparin", "Estudante de Engenharia.", "path/to/photo.jpg"),
     Aluno("Rafael Armando Zanella", 22, "https://github.com/rafaelzanella", "https://linkedin.com/in/rafaelzanella", "Estudante de Engenharia.", "path/to/photo.jpg"),
     Aluno("Vítor Augusto Rumke", 23, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
