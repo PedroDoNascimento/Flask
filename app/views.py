@@ -18,3 +18,5 @@ def listar_professores():
 def detalhes_aluno(aluno_id):
     aluno = alunos[aluno_id]
     return render_template('detalhes_aluno.html', aluno=aluno)
+
+

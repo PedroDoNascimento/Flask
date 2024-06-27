@@ -4,13 +4,13 @@
 
 {% block content %}
     <div class="welcome-container">
-        <h1>Bem-vindo ao Projeto Aluno</h1>
+        <h1>Bem-vindo ao <span>Projeto Aluno<span></h1>
         <div class="button-container">
             <a href="{{ url_for('listar_alunos') }}">
-                <div class="button">Lista de Alunos</div>
+                <div class="button" id="lista">Lista de Alunos:</div>
             </a>
             <a href="{{ url_for('listar_professores') }}">
-                <div class="button">Lista de Professores</div>
+                <div class="button" id="lista">Lista de Professores:</div>
             </a>
         </div>
     </div>

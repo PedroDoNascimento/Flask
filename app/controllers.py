@@ -38,9 +38,9 @@ alunos = [
 ]
 
 professores = [
-    Professor("Ana Carolina Nunes", "https://github.com/anacarolina", "https://linkedin.com/in/anacarolina", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Professor("Arthur Cantele Palmira", "https://github.com/arthurcantele", "https://linkedin.com/in/arthurcantele", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Professor("Arthur Fogaça", "https://github.com/arthurfogaca", "https://linkedin.com/in/arthurfogaca", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Professor("Arthur Zinani Pedroni", "https://github.com/arthurzinani", "https://linkedin.com/in/arthurzinani", "Estudante de Engenharia.", "path/to/photo.jpg")
+    Professor("Marcelo Luis Fardo", "https://github.com/anacarolina", "https://www.linkedin.com/in/marcelo-fardo/?originalSubdomain=br", "Estudante de PYGAME", "https://media.licdn.com/dms/image/C4E03AQEbmOxlxRPMNQ/profile-displayphoto-shrink_200_200/0/1634858777930?e=1724889600&v=beta&t=jYAHHEd56c8PQHfwg7R4w-HrgamL5gca4ORif7j9AHQ"),
+    Professor("Diego Flores", "https://github.com/arthurcantele", "https://www.linkedin.com/in/diego-flores-330622108/?originalSubdomain=br", "Professor de Suporte de Redes", "https://media.licdn.com/dms/image/D4D03AQEzPNSf3fx9ig/profile-displayphoto-shrink_200_200/0/1698878322234?e=1724889600&v=beta&t=O3F6iRZezWvTRGU3Je-Y15mdcfbbRmScGGA3OqaFMZ0"),
+    Professor("Cristina Cemin", "https://github.com/criscemin", "https://www.linkedin.com/in/cristina-cemin-77b028280/?originalSubdomain=br", "Professora de Banco de Dados", "path/to/photo.jpg"),
+    Professor("Éderson Almeida Pedro", "https://github.com/edertec", "https://www.linkedin.com/in/edersonpedro/", "Estudante de Machine Learning", "https://avatars.githubusercontent.com/u/44279375?v=4")
 ]
  

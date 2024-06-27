@@ -1,11 +1,26 @@
 body {
-    background-color: #f8f9fa;
+    background-color: rgb(34, 34, 34);
+}
+
+#topo{
+    color: black;
 }
 
 .card {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+}
+h1{
+    color: white;
+}
+
+#lista{
+    color: orange;
+}
+
+span{
+    color: orange;
 }
 
 .card:hover {
@@ -25,4 +40,12 @@ body {
 
 .btn {
     margin: 5px;
+}
+
+#btn{
+    background: rgb(231, 154, 9);
+}
+
+#listar_titulos{
+    color:rgb(206, 140, 19)
 }
