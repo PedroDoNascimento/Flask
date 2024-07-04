@@ -9,20 +9,32 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body id="body_base">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{{ url_for('home') }}" id="topo">Projeto Aluno</a>
+            <a class="navbar-brand" href="{{ url_for('home') }}">Projeto Aluno</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('listar_alunos') }}" id="listar_titulos">Alunos</a>
+                        <a class="nav-link" href="{{ url_for('listar_alunos') }}">Alunos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('listar_professores') }}" id="listar_titulos">Professores</a>
+                        <a class="nav-link" href="{{ url_for('listar_professores') }}">Professores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('cadastro_aluno') }}">Cadastrar Aluno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('cadastro_professor') }}">Cadastrar Professor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('cadastro_nota') }}">Cadastrar Nota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('visualizar_estatisticas') }}">Estatísticas</a>
                     </li>
                 </ul>
             </div>

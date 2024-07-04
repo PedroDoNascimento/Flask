@@ -1,51 +1,33 @@
 body {
-    background-color: rgb(34, 34, 34);
+    background-color: #f8f9fa;
 }
 
-#topo{
-    color: black;
-}
-
-.card {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-h1{
+.jumbotron {
+    background-color: #007bff;
     color: white;
 }
 
-#lista{
-    color: orange;
-}
-
-span{
-    color: orange;
+.card {
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
 }
 
-.card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 200px;
-    object-fit: cover;
+.button-container a .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
 }
 
-.card-body {
-    text-align: center;
-}
-
-.btn {
-    margin: 5px;
-}
-
-#btn{
-    background: rgb(231, 154, 9);
-}
-
-#listar_titulos{
-    color:rgb(206, 140, 19)
+.button-container a .button:hover {
+    background-color: #0056b3;
 }

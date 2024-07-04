@@ -1,46 +1,37 @@
-from app.models import Aluno, Professor
+from app.models import Aluno, Professor, Disciplina, Nota
 
 alunos = [
-    Aluno("Ana Carolina Nunes", 20, "https://github.com/anacarolina", "https://linkedin.com/in/anacarolina", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Arthur Cantele Palmira", 21, "https://github.com/arthurcantele", "https://linkedin.com/in/arthurcantele", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Arthur Fogaça", 22, "https://github.com/arthurfogaca", "https://linkedin.com/in/arthurfogaca", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Arthur Zinani Pedroni", 23, "https://github.com/arthurzinani", "https://linkedin.com/in/arthurzinani", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Bernardo Mossi", 20, "https://github.com/bernardomossi", "https://linkedin.com/in/bernardomossi", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Carolina Sachet", 21, "https://github.com/carolinasachet", "https://linkedin.com/in/carolinasachet", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Caroline Orlandí Bigolin", 22, "https://github.com/carolinebigolin", "https://linkedin.com/in/carolinebigolin", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Eduarda Salvador Terhorst", 23, "https://github.com/eduardaterhorst", "https://linkedin.com/in/eduardaterhorst", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Eduardo Augusto Picinin", 20, "https://github.com/eduardopicinin", "https://linkedin.com/in/eduardopicinin", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Eduardo Hainzenreder Pedroso", 21, "https://github.com/eduardopedroso", "https://linkedin.com/in/eduardopedroso", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Estevan de Paula", 22, "https://github.com/estevande", "https://linkedin.com/in/estevande", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Gabriel Carvalho Susin", 23, "https://github.com/gabrielsusin", "https://linkedin.com/in/gabrielsusin", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Gabriel Guerra", 20, "https://github.com/gabrielguerra", "https://linkedin.com/in/gabrielguerra", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Gabriel Zorzi Pezzi", 21, "https://github.com/gabrielpezzi", "https://linkedin.com/in/gabrielpezzi", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Giancarlo Zanetti Malgarizi", 22, "https://github.com/giancarlomalgarizi", "https://linkedin.com/in/giancarlomalgarizi", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Giovanni Camargo Gardenal Morandi", 23, "https://github.com/giovannimorandi", "https://linkedin.com/in/giovannimorandi", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Guilherme Resemini Zanol", 20, "https://github.com/guilhermezanol", "https://linkedin.com/in/guilhermezanol", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Heitor Trotto Mesquita", 21, "https://github.com/heitormesquita", "https://linkedin.com/in/heitormesquita", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Igor Rodrigues Ribeiro", 22, "https://github.com/igorribeiro", "https://linkedin.com/in/igorribeiro", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Ivo Viesser Neto", 23, "https://github.com/ivoneto", "https://linkedin.com/in/ivoneto", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("João Vítor Brombatti Feiten", 20, "https://github.com/joaovitorfeiten", "https://linkedin.com/in/joaovitorfeiten", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("João Vítor Mendes", 21, "https://github.com/joaovitormendes", "https://linkedin.com/in/joaovitormendes", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("João Vítor Michelon", 22, "https://github.com/joaovitormichelon", "https://linkedin.com/in/joaovitormichelon", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Kauã Drum Fortuna", 23, "https://github.com/kauafortuna", "https://linkedin.com/in/kauafortuna", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Manoela Gomes Zanotto", 20, "https://github.com/manoelazanotto", "https://linkedin.com/in/manoelazanotto", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Maria Thereza Adamatti Rizzotto", 21, "https://github.com/mariarizzotto", "https://linkedin.com/in/mariarizzotto", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Otávio Griebeler Turra", 22, "https://github.com/otavioturra", "https://linkedin.com/in/otavioturra", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Pedro David Brum", 23, "https://github.com/pedrobrum", "https://linkedin.com/in/pedrobrum", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Pedro do Nascimento", 20, "https://github.com/PedroDoNascimento", "https://linkedin.com/in/pedronascimento", "Estudante de Engenharia da computação", "https://campsbc.org.br/wp-content/uploads/2021/03/gato-no-pc.gif"),
-    Aluno("Pedro Henrique Gasparin Machado", 21, "https://github.com/pedrogasparin", "https://linkedin.com/in/pedrogasparin", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Rafael Armando Zanella", 22, "https://github.com/rafaelzanella", "https://linkedin.com/in/rafaelzanella", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Vítor Augusto Rumke", 23, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("Vitória Tumelero dos Santos", 20, "https://github.com/vitoriatumelero", "https://linkedin.com/in/vitoriatumelero", "Estudante de Engenharia.", "path/to/photo.jpg"),
-    Aluno("William dos Santos da Silva", 21, "https://github.com/williamsilva", "https://linkedin.com/in/williamsilva", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Aluno("Pedro Pedro", 23, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Aluno("Alfredo Palavro", 20, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Aluno("Ana Palavro", 18, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Aluno("Alfredo Jaconi", 19, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Aluno("Francisco Stedille", 22, "https://github.com/vitorrumke", "https://linkedin.com/in/vitorrumke", "Estudante de Engenharia.", "path/to/photo.jpg"),
 ]
 
 professores = [
-    Professor("Marcelo Luis Fardo", "https://github.com/anacarolina", "https://www.linkedin.com/in/marcelo-fardo/?originalSubdomain=br", "Estudante de PYGAME", "https://media.licdn.com/dms/image/C4E03AQEbmOxlxRPMNQ/profile-displayphoto-shrink_200_200/0/1634858777930?e=1724889600&v=beta&t=jYAHHEd56c8PQHfwg7R4w-HrgamL5gca4ORif7j9AHQ", "54-00000-00", "mlfardo@gmail.com", 40 ),
-    Professor("Diego Flores", "https://github.com/arthurcantele", "https://www.linkedin.com/in/diego-flores-330622108/?originalSubdomain=br", "Professor de Suporte de Redes", "https://media.licdn.com/dms/image/D4D03AQEzPNSf3fx9ig/profile-displayphoto-shrink_200_200/0/1698878322234?e=1724889600&v=beta&t=O3F6iRZezWvTRGU3Je-Y15mdcfbbRmScGGA3OqaFMZ0", "54-00000-00", "dflores@gmail.com", 23 ),
-    Professor("Cristina Cemin", "https://github.com/criscemin", "https://www.linkedin.com/in/cristina-cemin-77b028280/?originalSubdomain=br", "Professora de Banco de Dados", "path/to/photo.jpg", "54-00000-00", "ccemin@gmail.com", 24 ),
-    Professor("Éderson Almeida Pedro", "https://github.com/edertec", "https://www.linkedin.com/in/edersonpedro/", "Estudante de Machine Learning", "https://avatars.githubusercontent.com/u/44279375?v=4", "54-00000-00", "edertec@gmail.com", 25 )
+    Professor("Edertec", "https://github.com/anacarolina", "https://linkedin.com/in/anacarolina", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Professor("Rafa", "https://github.com/anacarolina", "https://linkedin.com/in/anacarolina", "Estudante de Engenharia.", "path/to/photo.jpg"),
+    Professor("Cris", "https://github.com/anacarolina", "https://linkedin.com/in/anacarolina", "Estudante de Engenharia.", "path/to/photo.jpg"),
 ]
  
+disciplinas = [
+    Disciplina("Matemática", professores[0]),
+    Disciplina("Física", professores[1]),
+    Disciplina("Progamação", professores[0]),
+    Disciplina("Games", professores[1]),
+    Disciplina("Banco de Dados", professores[2]),
+    # Adicione mais disciplinas conforme necessário
+]
+
+notas = [
+    Nota(alunos[0], disciplinas[0], 9.5),
+    Nota(alunos[0], disciplinas[1], 8.0),
+    Nota(alunos[0], disciplinas[2], 7.5),
+    Nota(alunos[0], disciplinas[3], 6.0),
+    Nota(alunos[0], disciplinas[4], 8.5),
+    Nota(alunos[1], disciplinas[1], 7.0),
+    Nota(alunos[1], disciplinas[2], 7.5),
+    Nota(alunos[1], disciplinas[3], 6.0),
+    Nota(alunos[1], disciplinas[4], 8.5),
+    # Adicione mais notas conforme necessário
+]
