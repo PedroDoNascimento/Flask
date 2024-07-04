@@ -8,7 +8,10 @@ import base64
 from flask import render_template, request, redirect, url_for, flash
 from app import app
 from app.controllers import alunos, professores, disciplinas, notas
-from app.models import Aluno, Professor, Disciplina, Nota
+from app.models.aluno import Aluno
+from app.models.professor import Professor
+from app.models.disciplina import Disciplina
+from app.models.nota import Nota
 
 @app.route('/')
 def home():
@@ -44,7 +47,7 @@ def listar_alunos():
 
 @app.route('/professores')
 def listar_professores():
-    return render_template('listar_professores.html', professores=professores)
+    return render_template('professores.html', professores=professores)
 
 @app.route('/alunos/<int:aluno_id>')
 def detalhes_aluno(aluno_id):

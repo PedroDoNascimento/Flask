@@ -120,10 +120,10 @@
         var chartMediaNotas = new Chart(ctxMediaNotas, {
             type: 'bar',
             data: {
-                labels: {{ labels | tojson }},
+                labels: {{ labels | tojson | safe }},
                 datasets: [{
                     label: 'Média das Notas',
-                    data: {{ data | tojson }},
+                    data: {{ data | tojson | safe }},
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1
@@ -143,10 +143,10 @@
         var chartIdades = new Chart(ctxIdades, {
             type: 'bar',
             data: {
-                labels: {{ age_labels | tojson }},
+                labels: {{ age_labels | tojson | safe }},
                 datasets: [{
                     label: 'Idades',
-                    data: {{ age_data | tojson }},
+                    data: {{ age_data | tojson | safe }},
                     backgroundColor: 'rgba(153, 102, 255, 0.2)',
                     borderColor: 'rgba(153, 102, 255, 1)',
                     borderWidth: 1
